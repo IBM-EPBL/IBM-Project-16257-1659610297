@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" href="{{url_for('static', filename='styles/signup.css')}}">
+
+<body>
+    <form action="/signup" method="POST">
+        <h1>CRUD APPLICATION !!!</h1>
+        
+        <h3>Signup</h3>
+
+        <div class="error">
+            {% if error %}
+               {{ error }}
+            {% endif %}
+       </div> 
+
+       <div class="msg">
+            {% if msg %}
+                {{ msg }}
+            {% endif %}
+        </div> 
+
+
+        <label>
+            Email
+        </label>
+
+        <br>
+
+        <input type="email" name="email">
+
+        <br><br>
+
+
+        <label>
+            Username
+        </label>
+
+        <br>
+
+        <input type="text" name="username" required>
+
+        <br><br>
+
+
+        <label>
+            Roll Number
+        </label>
+
+        <br>
+
+        <input type="text" name="roll_no" required>
+
+        <br><br>
+
+
+        <label>
+            Password
+        </label>
+
+        <br>
+
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <button type="submit">SIGN UP</button>
+
+        <br><br><br>
+
+        Already have an account? <a href="/">Sign in</a>
+
+        <br><br><br>
+    </form>
+</body>
+
+</html>
