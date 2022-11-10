@@ -2,3 +2,4 @@
 Inventory Managment System for Retailers
 
 ##  Team
+Team Leader: Karthik A
